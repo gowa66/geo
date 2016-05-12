@@ -19,8 +19,8 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', 'geo.views.poi_list'),
-    url(r'^add/', 'geo.views.home'),
+    url(r'^$', 'apps.geo.views.poi_list'),
+    url(r'^add/', 'apps.geo.views.home'),
     # url(r'^$', DataListView.as_view(), name='home'),
     # url(r'^data-list/$', DataListView.as_view(), name='data-list'),
 ]

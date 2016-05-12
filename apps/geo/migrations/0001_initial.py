@@ -16,9 +16,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=100)),
-                ('address', models.CharField(max_length=255)),
-                ('city', models.CharField(max_length=50)),
-                ('zipcode', models.CharField(max_length=10)),
+                ('comment', models.CharField(max_length=255)),
+                ('date', models.DateField(auto_now_add=True)),
                 ('position', geoposition.fields.GeopositionField(max_length=42, blank=True)),
             ],
             options={
