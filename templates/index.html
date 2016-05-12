@@ -43,7 +43,7 @@ function initialize() {
  
 function show_position(p) {
     //alert(p.address);
-    document.getElementById('current').innerHTML="latitude="+p.coords.latitude.toFixed(2)+" longitude="+p.coords.longitude.toFixed(2);
+    document.getElementById('current').innerHTML="latitude="+p.coords.latitude.toFixed(10)+" longitude="+p.coords.longitude.toFixed(10);
     var pos=new google.maps.LatLng(p.coords.latitude,p.coords.longitude);
     map.setCenter(pos);
     map.setZoom(14);
