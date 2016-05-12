@@ -1,6 +1,4 @@
-"""
-Django settings for Livarava-Neuroner project.
-"""
+ 
 
 import os
 import sys
