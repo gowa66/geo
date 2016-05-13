@@ -9,5 +9,4 @@ web/*
 logs/*.log
 logs/email/*
 .idea/
-basic/settings/base.py
 basic/settings/local.py
